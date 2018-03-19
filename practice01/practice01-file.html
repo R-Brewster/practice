@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        var string1 = 'bug'
+
+        var array1 = ['leaf','fly','go','branch','twig']
+
+        var array2 = []
+
+        function compare(string,array){
+            var compareLength = string.length
+    
+            for(var i = 0; i<array.length; i++){
+                if(compareLength<array[i].length){
+                    array2.push(array[i])
+                }
+            }
+        }
+
+        compare(string1, array1);
+
+        console.log (array2)
+    </script>
+    </head>
+</html>
+
